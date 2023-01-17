@@ -1,0 +1,6 @@
+[submodule "dotfiles"]
+	path = dotfiles
+	url = git@github.com:kibou227mirai/dotfiles.git
+[submodule "kkutils"]
+	path = kkutils
+	url = git@github.com:kibou227mirai/kkutils.git
