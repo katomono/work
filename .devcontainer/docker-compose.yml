@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  adoc:
+    image: dbgso/asciidoctor-watcher:0.1
+    volumes:
+      - ../data:/data
+    container_name: adoc_container
+    working_dir: '/data'
+    tty: true
+  nodeapp:
+    image: dbgso/autoreloadserver:0.1
+    volumes: 
+      - ../data:/data
+    container_name: autoreloadserver
+    working_dir: '/data'
+    ports: 
+      - 18080:8080

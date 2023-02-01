@@ -1,0 +1,11 @@
+{
+    "name": "devcontainer",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "adoc",
+    "settings": {
+    },
+    "extensions": [
+        "joaompinto.asciidoctor-vscode"
+    ],
+    "workspaceFolder": "/data"
+}

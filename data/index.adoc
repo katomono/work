@@ -1,0 +1,84 @@
+:toc: left
+:sectnums:
+:source-highlighter: coderay
+:imagesdir: ./images
+:icons: font
+
+
+= Document Title (Level 0)
+
+== Level 1 Section Title
+
+=== Level 2 Section Title
+
+==== Level 3 Section Title
+
+== Example
+
+=== table
+
+.table_example
+[options=header]
+|===
+|a|b|c
+|1|2|3
+|4|5|6
+|===
+
+
+.table_from_csvfile
+[options=header]
+,===
+include::./tables/table.csv[]
+,===
+
+WARNING: csv file is utf-8 only.(Excel is ShiftJIS)
+
+
+=== list
+
+* level 1
+** level 2
+*** level 3
+**** level 4
+***** level 5
+* level 1
+
+*ordered list*
+
+. Step 1
+. Step 2
+.. Step 2a
+.. Step 2b
+. Step 3
+
+
+=== image
+
+==== image from internet
+
+image::http://placehold.it/350x150[internetimage]
+
+==== local image
+
+image::./100x100.png[localimage]
+
+
+=== PlantUML
+
+[plantuml, sample, svg]
+--
+Alice -> Bob
+--
+
+=== source code
+
+.app.rb
+[source,ruby]
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
